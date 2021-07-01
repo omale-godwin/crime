@@ -1,0 +1,170 @@
+{% load static %}
+<!-- Navbar -->
+<nav
+  style="background-color: green !important"
+  class="
+    elementor-background-overlay
+    navigation
+    sticky-menu-on
+    navbar navbar-default
+  "
+>
+  <!-- Navigation & Search -->
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="open-btn">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span> <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="site-logo" style="">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            style="height: 60px"
+            src="{% static 'images/tr-logo.png' %}"
+            alt="Barristar"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      id="navbar"
+      class="
+        navbar-collapse navbar-right
+        collapse
+        navigation-holder
+        header-padding
+        has-header-cart
+      "
+    >
+      <button class="close-navbar"><i class="ti-close"></i></button>
+      <ul id="menu-main-menu" class="nav navbar-nav">
+        <li
+          id="menu-item-53"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-53
+          "
+        >
+          <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li
+          id="menu-item-54"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-54
+          "
+        >
+          <a href="{% url 'about' %}">About</a>
+        </li>
+
+        <li
+          id="menu-item-53"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-53
+          "
+        >
+          <a href="{% url 'report' %}">Report</a>
+        </li>
+        <li
+          id="menu-item-53"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-53
+          "
+        >
+          <a href="{% url 'cases' %}">Cases</a>
+        </li>
+
+        <li
+          id="menu-item-53"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-53
+          "
+        >
+          <a href="{% url 'contact' %}">Contact</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li
+          id="menu-item-53"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-53
+          "
+        >
+          <a href="{% url 'dashboard' %}">Dashboard</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a
+            href="javascript:{document.getElementById('logout').submit()}"
+            class="nav-link"
+          >
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </a>
+          <form action="{% url 'logout' %}" method="POST" id="logout">
+            {% csrf_token %}
+            <input type="hidden" />
+          </form>
+        </li>
+        {% else %}
+        <li
+          id="menu-item-53"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-53
+          "
+        >
+          <a href="{% url 'login' %}">Login</a>
+        </li>
+        <li
+          id="menu-item-53"
+          class="
+            menu-item
+            menu-item-type-post_type
+            menu-item-object-page menu-item-53
+          "
+        >
+          <a href="{% url 'register' %}">Register</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+    <!-- end of nav-collapse -->
+    <div class="cart-search-contact">
+      <div class="header-search-form-wrapper">
+        <button class="search-toggle-btn">
+          <i class="ti-search"></i>
+        </button>
+        <div class="header-search-form">
+          <form
+            method="get"
+            class="searchform"
+            action="https://barristar.wpocean.com/"
+          >
+            <div>
+              <input
+                type="text"
+                name="s"
+                id="s"
+                class="form-control"
+                placeholder="Search..."
+              />
+              <button type="submit"><i class="ti-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="mini-cart"></div>
+    </div>
+  </div>
+  <!-- end of container -->
+</nav>

@@ -1,0 +1,134 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- start page-title -->
+
+<style type="text/css">
+  .payment {
+    border: 1px solid #f2f2f2;
+    height: 280px;
+    border-radius: 20px;
+    background: #fff;
+  }
+  .payment_header {
+    background: rgb(16, 184, 38);
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .check {
+    margin: 0px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+  }
+
+  .check i {
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  .contentt {
+    text-align: center;
+  }
+
+  .contentt h1 {
+    font-size: 25px;
+    padding-top: 25px;
+  }
+
+  .contentt a {
+    width: 200px;
+    height: 35px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background: rgba(255, 102, 0, 1);
+    transition: all ease-in-out 0.3s;
+  }
+
+  .contentt a:hover {
+    text-decoration: none;
+    background: #000;
+  }
+</style>
+<section
+  class="page-title crumbs-area-60ce517357be6 default-title"
+  style="background-image: url(../wp-content/uploads/2019/11/hdear-bg.jpg)"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-12">
+        <div class="title"><h2>Contact</h2></div>
+        <nav
+          role="navigation"
+          aria-label="Breadcrumbs"
+          class="breadcrumb-trail breadcrumbs"
+        >
+          <ul class="breadcrumb trail-items">
+            <li class="trail-item trail-begin">
+              <a href="../index.html" rel="home"><span>Home</span></a>
+            </li>
+            <li class="trail-item trail-end"><span>Contact</span></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end page-title -->
+{% include 'partials/_alerts.html' %}
+<!-- <div class="container" style="text-align: center !important">
+  <div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+      <div class="payment">
+        <div class="payment_header">
+          <div class="check">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="contentt">
+          <h1>Reporting Success !</h1>
+          <p>
+            Kadpoly security admin will get back to you shortly Kadpoly security
+            admin will get back to you shortly
+          </p>
+          <a href="#">Go to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+    <!-- <h1 class="display-3">Fluid jumbo heading</h1> -->
+    <!-- <p class="lead">Jumbo helper text</p>
+    <hr class="my-2" />
+    <p>More info</p> -->
+    <!-- <p class="lead">
+      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button"
+        >Jumbo action name</a
+      >
+    </p> -->
+    <div class="payment">
+      <div class="payment_header">
+        <div class="check">
+          <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="contentt">
+        <h1>Reporting Success !</h1>
+        <p>
+          Kadpoly security admin will get back to you shortly Kadpoly security
+          admin will get back to you shortly
+        </p>
+        <a href="#">Go to Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

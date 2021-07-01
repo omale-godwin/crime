@@ -1,0 +1,15 @@
+{% extends 'admin/base.html' %} {% load static %} {% block branding %}
+<h1 id="head">
+  <img
+    src="{% static 'images/tr-logo.png' %}"
+    class="brand_img"
+    alt="E-FARMER-BUYER"
+    height="60"
+    width="150"
+  />
+  Crime Rporting Management System
+</h1>
+
+{% endblock %} {% block extrastyle%}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}" />
+{% endblock %}

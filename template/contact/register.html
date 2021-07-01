@@ -1,0 +1,273 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- start page-title -->
+<section
+  class="page-title crumbs-area-60ce517357be6 default-title"
+  style="background-image: url(../wp-content/uploads/2019/11/hdear-bg.jpg)"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col col-xs-12" style="">
+        <div class="title"><h2>Contact</h2></div>
+        <nav
+          role="navigation"
+          aria-label="Breadcrumbs"
+          class="breadcrumb-trail breadcrumbs"
+        >
+          <ul class="breadcrumb trail-items">
+            <li class="trail-item trail-begin">
+              <a href="../index.html" rel="home"><span>Home</span></a>
+            </li>
+            <li class="trail-item trail-end"><span>Contact</span></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end page-title -->
+{% include 'partials/_alerts.html' %}
+<div
+  data-elementor-type="wp-page"
+  data-elementor-id="39"
+  class="elementor elementor-39"
+  data-elementor-settings="[]"
+>
+  <div class="elementor-inner">
+    <div class="elementor-section-wrap">
+      <section
+        class="
+          elementor-section
+          elementor-top-section
+          elementor-element
+          elementor-element-e34dbe8
+          elementor-section-boxed
+          elementor-section-height-default
+          elementor-section-height-default
+        "
+        data-id="e34dbe8"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-row">
+            <!-- <div
+              class="
+                elementor-column
+                elementor-col-50
+                elementor-top-column
+                elementor-element
+                elementor-element-2bbdf87
+              "
+              data-id="2bbdf87"
+              data-element_type="column"
+            ></div> -->
+            <div
+              class="
+                elementor-column
+                elementor-col-100
+                elementor-top-column
+                elementor-element
+                elementor-element-89912b0
+              "
+              data-id="89912b0"
+              data-element_type="column"
+            >
+              <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                  <div
+                    class="
+                      elementor-element
+                      elementor-element-ba130ee
+                      elementor-widget
+                      elementor-widget-wpo-barristar_contact_form
+                    "
+                    data-id="ba130ee"
+                    data-element_type="widget"
+                    data-widget_type="wpo-barristar_contact_form.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="contact contact-page-area">
+                        <div class="contact-area contact-area-2 contact-area-3">
+                          <h2>Registration Form</h2>
+                          <div class="contact-form">
+                            <div
+                              role="form"
+                              class="wpcf7"
+                              id="wpcf7-f131-p39-o1"
+                              lang="en-US"
+                              dir="ltr"
+                            >
+                              <div class="screen-reader-response">
+                                <p
+                                  role="status"
+                                  aria-live="polite"
+                                  aria-atomic="true"
+                                ></p>
+                                <ul></ul>
+                              </div>
+                              <form
+                                action="{% url 'register' %}"
+                                method="post"
+                                class="wpcf7-form init"
+                                novalidate="novalidate"
+                                data-status="init"
+                              >
+                                {% csrf_token %}
+                                <div class="contact-home">
+                                  <div class="half-col">
+                                    <span
+                                      class="wpcf7-form-control-wrap text-100"
+                                      ><input
+                                        type="text"
+                                        name="name"
+                                        value=""
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-validates-as-required
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Your Full Name"
+                                    /></span>
+                                  </div>
+                                  <div class="half-col">
+                                    <span
+                                      class="wpcf7-form-control-wrap text-329"
+                                      ><input
+                                        type="text"
+                                        name="phone"
+                                        value=""
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-validates-as-required
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Phone"
+                                    /></span>
+                                  </div>
+                                  <div class="half-col">
+                                    <span
+                                      class="wpcf7-form-control-wrap email-633"
+                                      ><input
+                                        type="email"
+                                        name="email"
+                                        value=""
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-email
+                                          wpcf7-validates-as-required
+                                          wpcf7-validates-as-email
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Email"
+                                    /></span>
+                                  </div>
+                                  <div class="half-col">
+                                    <span
+                                      class="wpcf7-form-control-wrap text-329"
+                                      ><input
+                                        type="text"
+                                        name="regnumber"
+                                        value=""
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-validates-as-required
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Reg Number"
+                                    /></span>
+                                  </div>
+                                  <div class="half-col">
+                                    <span
+                                      class="
+                                        wpcf7-form-control-wrap
+                                        password-633
+                                      "
+                                      ><input
+                                        type="password"
+                                        name="password"
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-password
+                                          wpcf7-validates-as-required
+                                          wpcf7-validates-as-password
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="password"
+                                    /></span>
+                                  </div>
+                                  <div class="half-col">
+                                    <span
+                                      class="
+                                        wpcf7-form-control-wrap
+                                        password-633
+                                      "
+                                      ><input
+                                        type="password"
+                                        name="password2"
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-password
+                                          wpcf7-validates-as-required
+                                          wpcf7-validates-as-password
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Confirm password"
+                                    /></span>
+                                  </div>
+
+                                  <div class="btn btn-success btn-block btn-lg">
+                                    <input
+                                      type="submit"
+                                      value="Register Now "
+                                      class="
+                                        wpcf7-form-control wpcf7-submit
+                                        theme-btn
+                                      "
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  class="wpcf7-response-output"
+                                  aria-hidden="true"
+                                ></div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,346 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- start page-title -->
+<section
+  class="page-title crumbs-area-60ce517357be6 default-title"
+  style="background-image: url(../wp-content/uploads/2019/11/hdear-bg.jpg)"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col col-xs-12" style="">
+        <div class="title"><h2>Contact</h2></div>
+        <nav
+          role="navigation"
+          aria-label="Breadcrumbs"
+          class="breadcrumb-trail breadcrumbs"
+        >
+          <ul class="breadcrumb trail-items">
+            <li class="trail-item trail-begin">
+              <a href="../index.html" rel="home"><span>Home</span></a>
+            </li>
+            <li class="trail-item trail-end"><span>Contact</span></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end page-title -->
+{% include 'partials/_alerts.html' %}
+<div
+  data-elementor-type="wp-page"
+  data-elementor-id="39"
+  class="elementor elementor-39"
+  data-elementor-settings="[]"
+>
+  <div class="elementor-inner">
+    <div class="elementor-section-wrap">
+      <section
+        class="
+          elementor-section
+          elementor-top-section
+          elementor-element
+          elementor-element-e34dbe8
+          elementor-section-boxed
+          elementor-section-height-default
+          elementor-section-height-default
+        "
+        data-id="e34dbe8"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-row">
+            <div
+              class="
+                elementor-column
+                elementor-col-50
+                elementor-top-column
+                elementor-element
+                elementor-element-2bbdf87
+              "
+              data-id="2bbdf87"
+              data-element_type="column"
+            >
+              <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                  <div
+                    class="
+                      elementor-element
+                      elementor-element-f2f41b8
+                      elementor-widget
+                      elementor-widget-wpo-barristar_contactinfo
+                    "
+                    data-id="f2f41b8"
+                    data-element_type="widget"
+                    data-widget_type="wpo-barristar_contactinfo.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="contact-page-area">
+                        <div class="contact-page-item">
+                          <h2>Our Contacts</h2>
+                          <p>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC.
+                          </p>
+                          <div class="single-info">
+                            <div class="info-con">
+                              <i class="fi icon_pin_alt"></i>
+                            </div>
+                            <div class="phone">
+                              <h3>Address</h3>
+                              245 King Street, tudun wada kaduna Nigeria
+                            </div>
+                          </div>
+                          <div class="single-info">
+                            <div class="info-con">
+                              <i class="fi icon-earphones-alt"></i>
+                            </div>
+                            <div class="phone">
+                              <h3>Phone</h3>
+                              <span>07064115889</span>
+                              <span>09032196744</span>
+                            </div>
+                          </div>
+                          <div class="single-info">
+                            <div class="info-con">
+                              <i class="fi icon-envelope-open"></i>
+                            </div>
+                            <div class="phone">
+                              <h3>Email</h3>
+                              <span>gradedproject1@gmail.com</span>
+                              <span>kadpoly@security.com</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                elementor-column
+                elementor-col-50
+                elementor-top-column
+                elementor-element
+                elementor-element-89912b0
+              "
+              data-id="89912b0"
+              data-element_type="column"
+            >
+              <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                  <div
+                    class="
+                      elementor-element
+                      elementor-element-ba130ee
+                      elementor-widget
+                      elementor-widget-wpo-barristar_contact_form
+                    "
+                    data-id="ba130ee"
+                    data-element_type="widget"
+                    data-widget_type="wpo-barristar_contact_form.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="contact contact-page-area">
+                        <div class="contact-area contact-area-2 contact-area-3">
+                          <h2>Quick Contact Now</h2>
+                          <div class="contact-form">
+                            <div
+                              role="form"
+                              class="wpcf7"
+                              id="wpcf7-f131-p39-o1"
+                              lang="en-US"
+                              dir="ltr"
+                            >
+                              <div class="screen-reader-response">
+                                <p
+                                  role="status"
+                                  aria-live="polite"
+                                  aria-atomic="true"
+                                ></p>
+                                <ul></ul>
+                              </div>
+                              <form
+                                action="{% url 'contact' %}"
+                                method="post"
+                                class="wpcf7-form init"
+                                novalidate="novalidate"
+                                data-status="init"
+                              >
+                                {% csrf_token %}
+                                <div class="contact-home">
+                                  <div class="half-col">
+                                    <span
+                                      class="wpcf7-form-control-wrap text-100"
+                                      ><input
+                                        type="text"
+                                        name="name"
+                                        value=""
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-validates-as-required
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Your Name"
+                                    /></span>
+                                  </div>
+                                  <div class="half-col">
+                                    <span
+                                      class="wpcf7-form-control-wrap text-329"
+                                      ><input
+                                        type="text"
+                                        name="phone"
+                                        value=""
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-validates-as-required
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Phone"
+                                    /></span>
+                                  </div>
+                                  <div>
+                                    <span
+                                      class="wpcf7-form-control-wrap email-633"
+                                      ><input
+                                        type="email"
+                                        name="email"
+                                        value=""
+                                        size="40"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-text
+                                          wpcf7-email
+                                          wpcf7-validates-as-required
+                                          wpcf7-validates-as-email
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Email"
+                                    /></span>
+                                  </div>
+
+                                  <div>
+                                    <span
+                                      class="wpcf7-form-control-wrap textarea-8"
+                                    >
+                                      <textarea
+                                        name="message"
+                                        cols="40"
+                                        rows="10"
+                                        class="
+                                          wpcf7-form-control
+                                          wpcf7-textarea
+                                          wpcf7-validates-as-required
+                                          form-control
+                                        "
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        placeholder="Case Description"
+                                      ></textarea>
+                                    </span>
+                                  </div>
+                                  <div class="submit-btn-wrapper">
+                                    <input
+                                      type="submit"
+                                      value="Appointment"
+                                      class="
+                                        wpcf7-form-control wpcf7-submit
+                                        theme-btn
+                                      "
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  class="wpcf7-response-output"
+                                  aria-hidden="true"
+                                ></div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="
+          elementor-section
+          elementor-top-section
+          elementor-element
+          elementor-element-cc5e776
+          elementor-section-boxed
+          elementor-section-height-default
+          elementor-section-height-default
+        "
+        data-id="cc5e776"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-row">
+            <div
+              class="
+                elementor-column
+                elementor-col-100
+                elementor-top-column
+                elementor-element
+                elementor-element-c7b9e03
+              "
+              data-id="c7b9e03"
+              data-element_type="column"
+            >
+              <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                  <div
+                    class="
+                      elementor-element
+                      elementor-element-ec02b1c
+                      elementor-widget
+                      elementor-widget-google_maps
+                    "
+                    data-id="ec02b1c"
+                    data-element_type="widget"
+                    data-widget_type="google_maps.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="elementor-custom-embed">
+                        <iframe
+                          frameborder="0"
+                          scrolling="no"
+                          marginheight="0"
+                          marginwidth="0"
+                          src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+                          title="%3$s"
+                          aria-label="%3$s"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}

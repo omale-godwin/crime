@@ -1,0 +1,25 @@
+#header {
+  height: 90px;
+  background-color: #1f4e3d;
+  color: white;
+}
+#branding {
+  color: #fff;
+}
+
+a:link a:visited {
+  color: #1f4e3d;
+}
+
+.breadcrums {
+  background: #30caa0;
+}
+a.breadcrums {
+  color: #333;
+}
+th.breadcrums {
+  color: #333;
+}
+a {
+  padding-left: 30px;
+}

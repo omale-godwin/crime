@@ -1,0 +1,199 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- start page-title -->
+<link rel="stylesheet" href="{% static 'css/stl.css' %}" type="text/css" />
+<section
+  class="page-title crumbs-area-60ce517357be6 default-title"
+  style="background-image: url(../wp-content/uploads/2019/11/hdear-bg.jpg)"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col col-xs-12">
+        <div class="title"><h2>Weakness</h2></div>
+        <nav
+          role="navigation"
+          aria-label="Breadcrumbs"
+          class="breadcrumb-trail breadcrumbs"
+        >
+          <ul class="breadcrumb trail-items">
+            <li class="trail-item trail-begin">
+              <a href="{% url 'index' %}" rel="home"><span>Home</span></a>
+            </li>
+            <li class="trail-item trail-end"><span>Weakness Form</span></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end page-title -->
+{% include 'partials/_alerts.html' %}
+<div
+  data-elementor-type="wp-page"
+  data-elementor-id="39"
+  class="elementor elementor-39"
+  data-elementor-settings="[]"
+>
+  <div class="elementor-inner">
+    <div class="elementor-section-wrap">
+      <section
+        class="
+          elementor-section
+          elementor-top-section
+          elementor-element
+          elementor-element-e34dbe8
+          elementor-section-boxed
+          elementor-section-height-default
+          elementor-section-height-default
+        "
+        data-id="e34dbe8"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-row">
+            <!-- <div
+              class="
+                elementor-column
+                elementor-col-50
+                elementor-top-column
+                elementor-element
+                elementor-element-2bbdf87
+              "
+              data-id="2bbdf87"
+              data-element_type="column"
+            ></div> -->
+            <div
+              class="
+                elementor-column
+                elementor-col-100
+                elementor-top-column
+                elementor-element
+                elementor-element-89912b0
+              "
+              data-id="89912b0"
+              data-element_type="column"
+            >
+              <div class="container register">
+                <div class="row">
+                  <div class="col-md-3 register-left">
+                    <img src="{% static 'images/logo_white.png' %}" alt="" />
+                    <h3>Welcome</h3>
+                    <p>You are 30 seconds away from earning your own money!</p>
+                    <input type="" name="" value="Populating Evident Form" /><br />
+                  </div>
+                  <div class="col-md-9 register-right">
+                    <div class="" id="myTabContent">
+                      <div
+                        class=""
+                        id="home"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                      >
+                        <h3 class="register-heading">Provide Your Weakness</h3>
+                        <form method="POST" action="{% url 'weakness' %}">
+                          {% csrf_token%}
+                          <div class="row register-form">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input required
+                                  name="name"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Full Name *"
+                                  value=""
+                                />
+                              </div>
+                              <div class="form-group">
+                                <input required
+                                  name="regnumber"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Reg Number"
+                                  value=""
+                                />
+                              </div>
+                              <div class="form-group">
+                                <input required
+                                  type="email"
+                                  name="email"
+                                  class="form-control"
+                                  placeholder="email *"
+                                  value=""
+                                />
+                              </div>
+                              <div class="form-group">
+                                <input required
+                                  type="date"
+                                  name="date"
+                                  class="form-control"
+                                  placeholder="date"
+                                  value=""
+                                />
+                              </div>
+                          
+                            </div>
+                            <div class="col-md-6">
+                             
+                              <div class="form-group">
+                                <input required
+                                  type="text"
+                                  name="phone"
+                                  class="form-control"
+                                  placeholder="Your Phone *"
+                                  value=""
+                                />
+                              </div>
+                          
+                              <div class="form-group">
+                                <textarea required
+                                  name="description"
+                                  id=""
+                                  cols="33"
+                                  placeholder="Please Enter Your Detail"
+                                  rows="5"
+                                ></textarea>
+                              </div>
+                              </div>
+                              <!-- <input
+                              type="submit"
+                              class="btnRegister"
+                              value="Submit REport"
+                            /> -->
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <input
+                                    type="submit"
+                                    value="Submit Your Weakness"
+                                    class="btn btn-block btn-success"
+                                  />
+                                </div>
+                                </div>
+                                 <div class="col-md-6">
+                                 <div class="form-group">
+                                  <input
+                                    type="submit"
+                                    value="Don't Have WEakness Skip"
+                                    class="btn btn-block btn-warning"
+                                  />
+                                </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}
